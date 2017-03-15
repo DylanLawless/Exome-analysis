@@ -72,9 +72,9 @@ perl /home/vcfhacks-v0.2.0/filterOnEvsMaf.pl -d /home/ref/evs/ -f 1 --progress \
 #19 Exac filter
 ExAC
 perl /home/vcfhacks-v0.2.0/filterVcfOnVcf.pl \
--i /data/medddz/AnnotatedbSNP/combined.0.01.filtered.combinedvar.1pcdbsnp.vcf \
+-i /project_folder/geno/genotype.fltd-combinedvars.1pcdbsnp.1pcEVS.vcf \
 -f /home/ref/ExAC/ExAC.r0.3.sites.vep.vcf.gz \
--o /data/medddz/ExAC/combined.0.01.filtered.combinedvar.1pcdbsnp.exac.vcf -w -y 0.01
+-o /project_folder/geno/genotype.fltd-combinedvars.1pcdbsnp.1pcEVS.exac.vcf -w -y 0.01
 -b # progress bar
 -t # fork
 && \
@@ -89,12 +89,12 @@ perl /home/variant_effect_predictor/variant_effect_predictor.pl \
 --plugin ExAC,/home/ref/ExAC/ExAC.r0.3.sites.vep.vcf.gz \
 --plugin SpliceConsensus \
 --fasta /home/variant_effect_predictor/fasta/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz \
--i /project_folder/geno/genotype.fltd-combinedvars.1pcdbsnp.1pcEVS.vcf \
--o /project_folder/geno/genotype.fltd-combinedvars.1pcdbsnp.1pcEVS.vep.vcf \
+-i /project_folder/geno/genotype.fltd-combinedvars.1pcdbsnp.1pcEVS.exac.vcf \
+-o /project_folder/geno/genotype.fltd-combinedvars.1pcdbsnp.1pcEVS.exac.vep.vcf \
 --fork 12 && \
 
 #getSamplesname
 perl /home/vcfhacks-v0.2.0/getSampleNames.pl \
--i /project_folder/geno/genotype.fltd-combinedvars.1pcdbsnp.1pcEVS.vep.vcf && \
+-i /project_folder/geno/genotype.fltd-combinedvars.1pcdbsnp.1pcEVS.exac.vep.vcf && \
 
 exit

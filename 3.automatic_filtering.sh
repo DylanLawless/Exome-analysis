@@ -1,5 +1,5 @@
 # Your important working file:
-# /project_folder/geno/genotype.fltd-combinedvars.1pcdbsnp.1pcEVS.vep.vcf
+# /project_folder/geno/genotype.fltd-combinedvars.1pcdbsnp.1pcEVS.exac.vep.vcf
 
 # rename
 # Sample_ID
@@ -14,7 +14,7 @@ mkdir /project_folder/filtered/
 
 # 19 filter on sample
 perl /home/vcfhacks-v0.2.0/filterOnSample.pl \
--i /project_folder/geno/genotype.fltd-combinedvars.1pcdbsnp.1pcEVS.vep.vcf  \
+-i /project_folder/geno/genotype.fltd-combinedvars.1pcdbsnp.1pcEVS.exac.vep.vcf  \
 -s Sample_ID_SM -x \
 -o /project_folder/filtered/Sample_ID.vcf && \
 
