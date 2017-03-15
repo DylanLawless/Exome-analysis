@@ -83,9 +83,3 @@ perl /home/vcfhacks-v0.2.0/annovcfToSimple.pl \
 -o /project_folder/filtered/Sample_ID.getHetVariants.Hom.cadd_ranked.gene_anno.simple.xlsx && \
 
 exit
-
-# transfer when you're done
-
-# scp -P 4222 username@limm-pc4145:/project_folder/filtered/Sample_ID.getFunctionalVariantsVep.cadd_ranked.gene_anno.simple.xlsx /Users/user/Desktop/ && \
-# scp -P 4222 username@limm-pc4145:/project_folder/filtered/Sample_ID.findBiallelic.cadd_ranked.gene_anno.simple.xlsx /Users/user/Desktop/ && \
-# scp -P 4222 username@limm-pc4145:/project_folder/filtered/Sample_ID.getHetVariants.Hom.cadd_ranked.gene_anno.simple.xlsx /Users/user/Desktop/ && \

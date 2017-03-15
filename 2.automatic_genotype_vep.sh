@@ -75,13 +75,9 @@ perl /home/vcfhacks-v0.2.0/filterVcfOnVcf.pl \
 -i /data/medddz/AnnotatedbSNP/combined.0.01.filtered.combinedvar.1pcdbsnp.vcf \
 -f /home/ref/ExAC/ExAC.r0.3.sites.vep.vcf.gz \
 -o /data/medddz/ExAC/combined.0.01.filtered.combinedvar.1pcdbsnp.exac.vcf -w -y 0.01
--b
-# progress bar
--t
-# fork
-
+-b # progress bar
+-t # fork
 && \
-
 
 
 # 20 annotate with vep

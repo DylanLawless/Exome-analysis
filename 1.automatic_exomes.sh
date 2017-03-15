@@ -5,11 +5,11 @@
 
 # 2. rename
 # Sample_ID
-# eg.JT435
+
 
 # 3. rename project_folder
 # /project_folder/
-# eg. /data/dylanlawless/Project_A/
+# eg. /data/username/Project_A/
 
 # 4. Make project organisation folders
 mkdir /project_folder/ && \
