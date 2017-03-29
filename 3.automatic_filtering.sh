@@ -25,7 +25,7 @@ perl /home/vcfhacks-v0.2.0/getFunctionalVariants.pl \
 -o /project_folder/filtered/Sample_ID.getFunctionalVariantsVep.vcf && \
 
 perl /home/vcfhacks-v0.2.0/rankOnCaddScore.pl \
--c /data/shared/cadd/v1.2/*.gz \
+-c /data/shared/cadd/v1.3/*.gz \
 -i /project_folder/filtered/Sample_ID.getFunctionalVariantsVep.vcf \
 -o /project_folder/filtered/Sample_ID.getFunctionalVariantsVep.cadd_ranked.vcf --progress && \
 
@@ -46,7 +46,7 @@ perl /home/vcfhacks-v0.2.0/findBiallelic.pl \
 -o /project_folder/filtered/Sample_ID.findBiallelic.vcf && \
 
 perl /home/vcfhacks-v0.2.0/rankOnCaddScore.pl \
--c /data/shared/cadd/v1.2/*.gz \
+-c /data/shared/cadd/v1.3/*.gz \
 -i /project_folder/filtered/Sample_ID.findBiallelic.vcf \
 -o /project_folder/filtered/Sample_ID.findBiallelic.cadd_ranked.vcf -n cadd_not_found.tvs --progress && \
 
@@ -68,7 +68,7 @@ perl /home/vcfhacks-v0.2.0/getHetVariants.pl \
 -o /project_folder/filtered/Sample_ID.getHetVariants.Hom.vcf && \
 
 perl /home/vcfhacks-v0.2.0/rankOnCaddScore.pl \
--c /data/shared/cadd/v1.2/*.gz \
+-c /data/shared/cadd/v1.3/*.gz \
 -i /project_folder/filtered/Sample_ID.getHetVariants.Hom.vcf \
 -o /project_folder/filtered/Sample_ID.getHetVariants.Hom.cadd_ranked.vcf -n cadd_not_found.tvs --progress && \
 
