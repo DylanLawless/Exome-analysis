@@ -7,7 +7,7 @@ This input will be a list of file names and paths to fastqs.
 
 I will also plan to have options for filtering methods, ie. pedigree input file and filtering strategy. 
 Currently it just filters each sample against all others in a joint genotyped vcf and produces output for:
-1. functional variants.
-2. Bialleic variants.
-3. Homozygous varaints. 
+  functional variants.
+  Bialleic variants.
+  Homozygous varaints. 
 
