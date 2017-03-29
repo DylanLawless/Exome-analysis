@@ -1,0 +1,20 @@
+1. monitor activity:
+$ htop
+quit: $ q
+(https://codeahoy.com/2017/01/20/hhtop-explained-visually/)
+
+2. See your files and directory sizes
+In your data directory:
+$ du -sh
+
+A better breakdown from your current directory:
+$ du -a -h --max-depth=1 | sort -hr
+
+or from anywhere:
+$ du -a -h --max-depth=1 /data/username/ | sort -hr
+
+3. Transfer files/folders
+While logged into the server this sends the folder:
+$ rsync -avz -P  /data/username/importnat_folder uni_username@ComputerName.leeds.ac.uk:/Users/uni_username/Desktop/
+
+note: a trailing slash in the source (../temp/) will send all the files individually which you probably don’t want.
