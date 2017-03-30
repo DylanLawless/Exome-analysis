@@ -1,8 +1,8 @@
-
 # Do not forget to create directory
 mkdir /project_folder/geno/
 
 #!/bin/bash
+
 # 11 Joint genotype
 java -Xmx12g -jar /home/GATK/GenomeAnalysisTK-3.5-0/GenomeAnalysisTK.jar \
 -T GenotypeGVCFs \
