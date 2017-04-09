@@ -3,7 +3,10 @@ $ htop
 quit: $ q
 (https://codeahoy.com/2017/01/20/hhtop-explained-visually/)
 
-2. See your files and directory sizes
+2. List the sizes used and available on the file system in a human readable format (Note /data).
+$ df -h
+
+3. See your files and directory sizes
 In your data directory:
 $ du -sh
 
@@ -13,7 +16,7 @@ $ du -a -h --max-depth=1 | sort -hr
 or from anywhere:
 $ du -a -h --max-depth=1 /data/username/ | sort -hr
 
-3. Transfer files/folders
+4. Transfer files/folders
 While logged into the server this sends the folder:
 $ rsync -avz -P  /data/username/importnat_folder uni_username@ComputerName.leeds.ac.uk:/Users/uni_username/Desktop/
 
