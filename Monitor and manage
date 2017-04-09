@@ -3,7 +3,7 @@ $ htop
 quit: $ q
 (https://codeahoy.com/2017/01/20/hhtop-explained-visually/)
 
-2. List the sizes used and available on the file system in a human readable format (Note /data).
+2. List the sizes used and availability on the file system in a human readable format (Note /data).
 $ df -h
 
 3. See your files and directory sizes
