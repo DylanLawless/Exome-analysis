@@ -22,12 +22,14 @@ $ rsync -avz -P  /data/username/importnat_folder uni_username@ComputerName.leeds
 
 note: a trailing slash in the source (../temp/) will send all the files individually which you probably don’t want.
 
-5. Stephen Turner's bash oneliners
+5. Current users and processes
+$ w
+
+6. Stephen Turner's bash oneliners
 https://github.com/stephenturner/oneliners
 
-6. Tmux for detachable sessions and long jobs. Be careful not to nest sessions, and practice on you local machine to learn keybindings and how to find/kill sessions.
+7. Tmux for detachable sessions and long jobs. Be careful not to nest sessions, and practice on you local machine to learn keybindings and how to find/kill sessions. If you are used to brew; brew install tmux.
 Cheatsheet: https://www.cheatography.com/thecultofkaos/cheat-sheets/tmux-basics/
 Basic configuration file to make tmux usable and logical: https://github.com/DylanLawless/tmux/blob/master/tmux.conf
+Copy this or (or better, write it yourself to familiarise) to ~/tmux.conf
 (window splitting and Set prefix to Ctrl-a are most intuitive). 
-
-
