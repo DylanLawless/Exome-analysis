@@ -22,6 +22,10 @@ $ rsync -avz -P  /data/username/importnat_folder uni_username@ComputerName.leeds
 
 note: a trailing slash in the source (../temp/) will send all the files individually which you probably don’t want.
 
+Very fast:
+https://gist.github.com/KartikTalwar/4393116
+rsync -aHAXv -e "ssh -T -o Compression=no -x" user@<source>:<source_dir> <dest_dir>
+
 5. Current users and processes
 $ w
 
