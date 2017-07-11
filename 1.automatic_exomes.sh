@@ -2,7 +2,7 @@
 # 1. Rename
 # Sequencing_ID_L001
 # eg. 1_S1_L001
-
+# test
 # 2. rename
 # Sample_ID
 
